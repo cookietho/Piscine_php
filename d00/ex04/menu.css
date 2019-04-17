@@ -1,0 +1,102 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    menu.css                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: minakim <marvin@42.fr>                     +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/26 14:27:38 by minakim           #+#    #+#              #
+#    Updated: 2019/03/26 14:27:49 by minakim          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+.menu_b{
+border:none;
+border:0px;
+margin:0px;
+padding:0px;
+font: Verdana;
+font-size:20px;
+font-weight:bold;
+}
+
+.menu_b ul{
+background: #66CDAA;
+height:50px;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+.menu_b li{
+float:left;
+padding:0px;
+}
+
+.menu_b li a{
+background: #66CDAA;
+color:#000000;
+display:block;
+font-weight:normal;
+line-height:50px;
+margin:0px;
+padding:0px 25px;
+text-align:center;
+text-decoration:none;
+}
+
+.menu_b li a:hover, .menu_b ul li:hover a{
+background: rgb(12, 56, 5);
+color:#FFFFFF;
+text-decoration:none;
+}
+
+.menu_b li ul{
+background: rgb(24, 112, 11);
+display:none;
+height:auto;
+padding:0px;
+margin:0px;
+border:0px;
+position:absolute;
+width:200px;
+z-index:200;
+}
+
+.menu_b li:hover ul{
+display:block;
+}
+
+.menu_b li li {
+background: rgb(12, 56, 5);
+display:block;
+float:none;
+margin:0px;
+padding:0px;
+width:200px;
+}
+
+.menu_b li:hover li a{
+background:none;
+}
+
+.menu_b li ul a{
+display:block;
+height:50px;
+font-size:14px;
+font-style:normal;
+margin:0px;
+padding:0px 10px 0px 15px;
+text-align:left;
+}
+
+.menu_b li ul a:hover, .menu_b li ul li:hover a{
+background: rgb(12, 56, 5);
+border:0px;
+color:#ffffff;
+text-decoration:none;
+}
+
+.menu_b p{
+clear:left;
+}

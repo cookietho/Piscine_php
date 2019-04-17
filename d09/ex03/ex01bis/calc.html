@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<title>Calc.html</title>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<style>
+			input[type="text"]
+			{
+				width: 200px;
+				height: 25px;
+				font-size: 20px;
+			}
+		</style>
+		<script>
+			var left;
+			var right;
+			var op;
+			var calculate;
+
+			$(document).ready(function(){
+				calculate = $('#cal');
+				left = $('#left');
+				right = $('#right');
+				op = $('#op');
+				calculate.submit(submit);
+				setInterval("alert('Please, use me...')", 30000);
+			});
+
+			function validation(nb1, nb2)
+			{
+				if (nb1 >= 0 && nb2 >= 0 && nb1 == parseInt(nb1, 10) && nb2 == parseInt(nb2, 10))
+					return (1);
+				return (0);
+			}
+
+			function submit(event)
+			{
+				event.preventDefault();
+				var nb1 = Number(left.val());
+				var nb2 = Number(right.val());
+				if (!validation(left.val(), right.val()))
+				{
+					alert("Error :(");
+					return false;
+				}
+				switch (op.val())
+				{
+					case ("plus"):
+					{
+						result (nb1 + nb2);
+						break;
+					}
+					case ("minus"):
+					{
+						result (nb1 - nb2);
+						break;
+					}
+					case ("multiply"):
+					{
+						result (nb1 * nb2);
+						break;
+					}
+					case ("division"):
+					{
+						if (nb2 === 0)
+							result ("It’s over 9000!");
+						else
+							result (num1 / num2);
+						break;
+					}
+					case ("modulo"):
+					{
+						if (nb2 === 0)
+							result ("It’s over 9000!");
+						else
+							result (nb1 % nb2);
+					}
+					default:
+						break;
+				}
+			}
+
+			function result(message)
+			{
+				console.log(message);
+				alert(message);
+			}
+		</script>
+	</head>
+	<body>
+		<form action = "" id = "cal">
+			<input type = "text" id = "left">
+			<select id = "op">
+				<option value = "plus">+</option>
+				<option value = "minus">-</option>
+				<option value = "multiply">*</option>
+				<option value = "division">/</option>
+				<option value = "modulo">%</option>
+			</select>
+			<input type = "text" id = "right">
+			<br>
+			<input type = "submit" id = "submit" value = "Try me!">
+		</form>
+	</body>
+</html>

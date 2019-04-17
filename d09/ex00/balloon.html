@@ -1,0 +1,73 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- balloon.html                                       :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: minakim <marvin@42.fr>                     +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2019/04/05 15:07:06 by minakim           #+#    #+#            -->
+<!-- Updated: 2019/04/05 16:42:32 by minakim          ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<html>
+<head>
+  <title>Balloon</title>
+  		<script>
+			function increase_size()
+			{
+				var id = document.getElementById('balloon');
+				var x = id.style.height;
+				var y = id.style.width;
+				var c = id.style.backgroundColor;
+				x = Number(x.slice(0, 3)) + 10;
+				y = Number(y.slice(0, 3)) + 10;
+				if (x < 421)
+				{
+					id.style.height = x + "px";
+					id.style.width = x + "px";
+				}
+				else
+				{
+					id.style.height = "200px";
+					id.style.width = "200px";
+				}
+				if (c == "red")
+					id.style.backgroundColor = "green";
+				else if (c == "green")
+					id.style.backgroundColor = "blue";
+				else
+					id.style.backgroundColor = "red";
+			}
+			function decrease_size()
+			{
+				var id = document.getElementById('balloon');
+				var x = id.style.height;
+				var y = id.style.width;
+				var c = id.style.backgroundColor;
+				x = Number(x.slice(0, 3)) - 5;
+				y = Number(y.slice(0, 3)) - 5;
+				if (x == 195)
+				{
+					id.style.height = "200px";
+					id.style.width = "200px";
+				}
+				else
+				{
+					id.style.height = x + "px";
+					id.style.width = x + "px";
+				}
+				if (c == "red")
+					id.style.backgroundColor = "blue";
+				else if (c == "green")
+					id.style.backgroundColor = "red";
+				else
+					id.style.backgroundColor = "green";
+			}
+		</script>
+</head>
+<body>
+  <div id="balloon" style="height: 200px; width: 200px; border-radius: 50%; background-color: red;" onClick="increase_size()" onmouseleave="decrease_size();">
+  </div>
+</body>
+</html>

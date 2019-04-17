@@ -1,0 +1,20 @@
+<- Vertex ----------------------------------------------------------------------
+Representation of a point in space: the "vertex"
+Pepresentation of vertex is as follows:
+- x axis coordinate
+- y axis coordinate
+- z depth coordinate
+- new and disturbing w coordinate "homogeneous coordinate"
+- color represented by an instance of the Color Class
+
+The Vertex Class offers a coordinate encapsulation and provides reading and writing assessors for the corresponding attributes.
+
+The Vertex Class possess private attributes to represent the five chracteristics.
+
+The Vertex Class is an instance of the Color Class.
+
+The class provides the following methods :
+
+Color	doc();
+Reads the documentation of the class in a string from a Vertex.doc.txt.
+---------------------------------------------------------------------- Vertex ->

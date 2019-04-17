@@ -1,0 +1,105 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- calc.html                                          :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: minakim <marvin@42.fr>                     +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2019/04/05 15:10:26 by minakim           #+#    #+#            -->
+<!-- Updated: 2019/04/05 15:10:29 by minakim          ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<HTML>
+	<HEAD>
+		<TITLE>Calculator!!!!!!!!</TITLE>
+		<script type="text/javascript">
+			var left, right, op, result;
+
+			function setValues()
+			{
+				left = Number(document.getElementById("left_box").value);
+				right = Number(document.getElementById("right_box").value);
+				op = document.getElementById("op").value;
+			}
+
+			function is_positive(nb1, nb2)
+			{
+				if (nb1 >= 0 && nb2 >= 0)
+					return (true);
+				return (false);
+			}
+
+			function calculate()
+			{
+				setValues();
+				if (is_positive(left, right) == false)
+				{
+					alert("Error :(");
+					return false;
+				}
+				switch (op)
+				{
+					case '+' :
+					{
+						result = left + right;
+						break;
+					};
+					case '-' :
+					{
+						result = left - right;
+						break;
+					};
+					case '*' :
+					{
+						result = left * right;
+						break;
+					};
+					case '/' :
+					{
+						if (right == 0)
+							result = ("It's over 9000!");
+						else
+							result = left / right;
+						break;
+					};
+					case '%' :
+					{
+						if (right == 0)
+							result = ("It's over 9000!");
+						else
+							result = left % right;
+						break;
+					};
+					default :
+						break;
+				}
+				console.log(result);
+				alert (result);
+			}
+		</script>
+	</HEAD>
+	<BODY>
+	<script type="text/javascript">
+		window.onload = function ()
+		{
+			console.log(setInterval("alert('Please, use me...')", 30000));
+		}
+	</script>
+		<div class="box">
+			<form>
+				<input type="text" id="left_box">
+				<select id="op">
+					<option value="+">+</option>
+					<option value="-">-</option>
+					<option value="*">*</option>
+					<option value="/">/</option>
+					<option value="%">%</option>
+				</select>
+				<input type="text" id="right_box">
+				<br>
+				<input type="submit" value="Try me!" id="button" onclick="calculate()">
+			</form>
+		</div>
+	</BODY>
+</HTML>

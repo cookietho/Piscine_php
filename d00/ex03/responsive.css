@@ -1,0 +1,36 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    responsive.css                                     :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: minakim <marvin@42.fr>                     +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/26 14:25:11 by minakim           #+#    #+#              #
+#    Updated: 2019/03/26 14:25:23 by minakim          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+TABLE {
+	border-collapse: collapse;
+}
+TD {
+	width: calc(100% / 19);
+	height: auto;
+border: 1px solid black;}
+#hidden {border:none;}
+.td01 {text-align:center; border:none; color:white; background-color:black; font-size:1.5vw}
+.td02 {text-align:center; font-weight:bold; font-size:2vw;}
+.td05 {text-align:center; font-weight:bold; font-size:1vw;}
+.td03 {text-align:left; font-size:1vw;}
+.td04 {text-align:right; font-size:1vw;}
+.alk {background-color:#f492cc;}
+.alke {background-color:#f4ca92;}
+.lan {background-color:#a6ff5e;}
+.act {background-color:#5aed8d;}
+.com {background-color:#ecf492;}
+.acom {background-color:#93735d;}
+.semi {background-color:#fc852f;}
+.multi {background-color:#fcb480;}
+.two {background-color:#a5ad85;}
+.ina {background-color:#ffa100;}
+.non {background-color:#ffffff;}

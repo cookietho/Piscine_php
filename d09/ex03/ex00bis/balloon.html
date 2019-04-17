@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Balloon</title>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script>
+		var i = 0;
+		$(document).ready(function(){
+			$("#balloon").click(function() {
+				size_change('up');
+			});
+			$("#balloon").mouseleave(function() {
+				size_change('down');
+			});
+		});
+		
+		function size_change(ud)
+		{
+			var h = Number($('#balloon').height());
+			var w = Number($('#balloon').width());
+			var col = ["red", "green", "blue"];
+			switch(ud){
+				case 'up': h += 10; w += 10;
+					if (i == 2) 
+						i = 0; 
+					else
+						i++;
+					break;
+				case 'down': h -= 5; w -= 5;
+					if (i == 0)
+						i = 2;
+					else
+						i--;
+					break;
+			}
+			if (h == 195 || h == 425)
+				{
+					h = 200;
+					w = 200;
+				}
+			$("#balloon").css({'height': h, 'width': w, 'background-color': col[i]});
+		}
+		</script>
+<style>
+	#balloon {
+		height: 200;
+		width: 200;
+		background-color: red;
+		border-radius: 50%;
+	}
+</style>
+	</head>
+	<body>
+		<div id="balloon"></div>
+	</body>
+</html>
+

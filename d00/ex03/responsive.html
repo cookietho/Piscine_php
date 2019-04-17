@@ -1,0 +1,721 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- responsive.html                                    :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: minakim <marvin@42.fr>                     +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2019/03/26 14:24:54 by minakim           #+#    #+#            -->
+<!-- Updated: 2019/03/26 14:25:06 by minakim          ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<HTML>
+<HEAD>
+	<TITLE>Periodic Table</TITLE>
+<STYLE type="text/css">
+	TABLE {
+		border-collapse: collapse;
+	}
+	TD {
+		width: 70px;
+		height: 70px;
+		border: 1px solid black;}
+	#hidden {border:none;}
+	.td01 {text-align:center; border:none; color:white; font-weight:bold;}
+	.td02 {text-align:center; font-weight:bold;}
+	.td03 {text-align:left; font-size:small;}
+	.td04 {text-align:right; font-size:small;}
+	.alk {background-color:#FA8072;}
+	.alke {background-color:#f4ca92;}
+	.lan {background-color:#D8BFD8;}
+	.act {background-color:#9370DB;}
+	.com {background-color:#ecf492;}
+	.acom {background-color:#93735d;}
+	.semi {background-color:#fc852f;}
+	.multi {background-color:#fcb480;}
+	.two {background-color:#a5ad85;}
+	.ina {background-color:#ffa100;}
+	.non {background-color:#ffffff;}
+</STYLE>
+</HEAD>
+<BODY background="http://bgfons.com/uploads/ground/ground_texture894.jpg" contenteditable="true">
+	<H1 style="text-align:center; color:white;"><b>Periodic Table</b></H1>
+	<TABLE>
+		<TR>
+			<TD class="td01">Group&rarr;</br>Period&darr;</TD>
+			<TD class="td01">1</TD>
+			<TD class="td01">2</TD>
+			<TD class="td01">3</TD>
+			<TD class="td01">4</TD>
+			<TD class="td01">5</TD>
+			<TD class="td01">6</TD>
+			<TD class="td01">7</TD>
+			<TD class="td01">8</TD>
+			<TD class="td01">9</TD>
+			<TD class="td01">10</TD>
+			<TD class="td01">11</TD>
+			<TD class="td01">12</TD>
+			<TD class="td01">13</TD>
+			<TD class="td01">14</TD>
+			<TD class="td01">15</TD>
+			<TD class="td01">16</TD>
+			<TD class="td01">17</TD>
+			<TD class="td01">18</TD>
+		</TR>
+		<TR>
+			<TD class="td01">1</TD>
+			<TD class="two">
+				<div class="td04">1.01</div>
+				<div class="td02">H</br></div>
+				<div class="td03">1</br></div>
+			</TD>
+			<TD colspan="16" id="hidden"></td>
+			<TD class="ina">
+				<div class="td04">4.00</div>
+				<div class="td02">He</br></div>
+				<div class="td03">2</br></div>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="td01">2</TD>
+			<TD class="alk">
+				<div class="td04">6.94</div>
+				<div class="td02">Li</br></div>
+				<div class="td03">3</br></div>
+			</TD>
+			<TD class="alke">
+				<div class="td04">9.01</div>
+				<div class="td02">Be</br></div>
+				<div class="td03">4</br></div>
+			</TD>
+			<TD colspan="10" id="hidden"></TD>
+			<TD class="semi">
+				<div class="td04">10.81</div>
+				<div class="td02">B</br></div>
+				<div class="td03">5</br></div>
+			</TD>
+			<TD class="multi">
+				<div class="td04">12.01</div>
+				<div class="td02">C</br></div>
+				<div class="td03">6</br></div>
+			</TD>
+			<TD class = "two">
+				<div class="td04">14.01</div>
+				<div class="td02">N</br></div>
+				<div class="td03">7</br></div>
+			</TD>
+			<TD class = "two">
+				<div class="td04">16.00</div>
+				<div class="td02">O</br></div>
+				<div class="td03">8</br></div>
+			</TD>
+			<TD class = "two">
+				<div class="td04">19.00</div>
+				<div class="td02">F</br></div>
+				<div class="td03">9</br></div>
+			</TD>
+			<TD class = "ina">
+				<div class="td04">20.18</div>
+				<div class="td02">Ne</br></div>
+				<div class="td03">10</br></div>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="td01">3</TD>
+			<TD class="alk">
+				<div class="td04">22.99</div>
+				<div class="td02">Na</br></div>
+				<div class="td03">11</br></div>
+			</TD>
+			<TD class="alke">
+				<div class="td04">24.31</div>
+				<div class="td02">Mg</br></div>
+				<div class="td03">12</br></div>
+			</TD>
+			<TD colspan="10" id="hidden"></TD>
+			<TD class="acom">
+				<div class="td04">26.98</div>
+				<div class="td02">Al</br></div>
+				<div class="td03">13</br></div>
+			</TD>
+			<TD class="semi">
+				<div class="td04">28.09</div>
+				<div class="td02">Si</br></div>
+				<div class="td03">14</br></div>
+			</TD>
+			<TD class="multi">
+				<div class="td04">30.97</div>
+				<div class="td02">P</br></div>
+				<div class="td03">15</br></div>
+			</TD>
+			<TD class="multi">
+				<div class="td04">32.06</div>
+				<div class="td02">S</br></div>
+				<div class="td03">16</br></div>
+			</TD>
+			<TD class="two">
+				<div class="td04">35.45</div>
+				<div class="td02">Cl</br></div>
+				<div class="td03">17</br></div>
+			</TD>
+			<TD class="ina">
+				<div class="td04">39.95</div>
+				<div class="td02">Ar</br></div>
+				<div class="td03">18</br></div>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="td01">4</TD>
+			<TD class="alk">
+				<div class="td04">39.10</div>
+				<div class="td02">K</br></div>
+				<div class="td03">19</br></div>
+			</TD>
+			<TD class="alke">
+				<div class="td04">40.08</div>
+				<div class="td02">Ca</br></div>
+				<div class="td03">20</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">44.96</div>
+				<div class="td02">Sc</br></div>
+				<div class="td03">21</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">47.88</div>
+				<div class="td02">Ti</br></div>
+				<div class="td03">22</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">50.94</div>
+				<div class="td02">V</br></div>
+				<div class="td03">23</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">51.99</div>
+				<div class="td02">Cr</br></div>
+				<div class="td03">24</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">54.94</div>
+				<div class="td02">Mn</br></div>
+				<div class="td03">25</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">55.85</div>
+				<div class="td02">Fe</br></div>
+				<div class="td03">26</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">58.93</div>
+				<div class="td02">Co</br></div>
+				<div class="td03">27</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">58.69</div>
+				<div class="td02">Ni</br></div>
+				<div class="td03">28</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">63.55</div>
+				<div class="td02">Cu</br></div>
+				<div class="td03">29</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">65.38</div>
+				<div class="td02">Zn</br></div>
+				<div class="td03">30</br></div>
+			</TD>
+			<TD class="acom">
+				<div class="td04">69.72</div>
+				<div class="td02">Ga</br></div>
+				<div class="td03">31</br></div>
+			</TD>
+			<TD class="semi">
+				<div class="td04">72.63</div>
+				<div class="td02">Ge</br></div>
+				<div class="td03">32</br></div>
+			</TD>
+			<TD class="semi">
+				<div class="td04">74.92</div>
+				<div class="td02">As</br></div>
+				<div class="td03">33</br></div>
+			</TD>
+			<TD class="multi">
+				<div class="td04">78.97</div>
+				<div class="td02">Se</br></div>
+				<div class="td03">34</br></div>
+			</TD>
+			<TD class="two">
+				<div class="td04">79.90</div>
+				<div class="td02">Br</br></div>
+				<div class="td03">35</br></div>
+			</TD>
+			<TD class="ina">
+				<div class="td04">84.80</div>
+				<div class="td02">Kr</br></div>
+				<div class="td03">36</br></div>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="td01">5</TD>
+			<TD class="alk">
+				<div class="td04">85.47</div>
+				<div class="td02">Rb</br></div>
+				<div class="td03">37</br></div>
+			</TD>
+			<TD class="alke">
+				<div class="td04">87.62</div>
+				<div class="td02">Sr</br></div>
+				<div class="td03">38</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">88.91</div>
+				<div class="td02">Y</br></div>
+				<div class="td03">39</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">91.22</div>
+				<div class="td02">Zr</br></div>
+				<div class="td03">40</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">92.91</div>
+				<div class="td02">Nb</br></div>
+				<div class="td03">41</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">95.95</div>
+				<div class="td02">Mo</br></div>
+				<div class="td03">42</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">98.91</div>
+				<div class="td02">Tc</br></div>
+				<div class="td03">43</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">101.07</div>
+				<div class="td02">Ru</br></div>
+				<div class="td03">44</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">102.91</div>
+				<div class="td02">Rh</br></div>
+				<div class="td03">45</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">106.42</div>
+				<div class="td02">Pd</br></div>
+				<div class="td03">46</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">107.87</div>
+				<div class="td02">Ag</br></div>
+				<div class="td03">47</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">112.41</div>
+				<div class="td02">Cd</br></div>
+				<div class="td03">48</br></div>
+			</TD>
+			<TD class="acom">
+				<div class="td04">114.82</div>
+				<div class="td02">In</br></div>
+				<div class="td03">49</br></div>
+			</TD>
+			<TD class="acom">
+				<div class="td04">118.71</div>
+				<div class="td02">Sn</br></div>
+				<div class="td03">50</br></div>
+			</TD>
+			<TD class="semi">
+				<div class="td04">121.76</div>
+				<div class="td02">Sb</br></div>
+				<div class="td03">51</br></div>
+			</TD>
+			<TD class="semi">
+				<div class="td04">127.6</div>
+				<div class="td02">Te</br></div>
+				<div class="td03">52</br></div>
+			</TD>
+			<TD class="two">
+				<div class="td04">126.90</div>
+				<div class="td02">I</br></div>
+				<div class="td03">53</br></div>
+			</TD>
+			<TD class="ina">
+				<div class="td04">131.29</div>
+				<div class="td02">Xe</br></div>
+				<div class="td03">54</br></div>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="td01">6</TD>
+			<TD class="alk">
+				<div class="td04">132.91</div>
+				<div class="td02">Cs</br></div>
+				<div class="td03">55</br></div>
+			</TD>
+			<TD class="alke">
+				<div class="td04">137.33</div>
+				<div class="td02">Ba</br></div>
+				<div class="td03">56</br></div>
+			</TD>
+			<TD class="lan">
+				<div class="td04">&nbsp;</div>
+				<div class="td02">La</br></div>
+				<div class="td03">57-71</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">178.49</div>
+				<div class="td02">Hf</br></div>
+				<div class="td03">72</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">180.95</div>
+				<div class="td02">Ta</br></div>
+				<div class="td03">73</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">183.85</div>
+				<div class="td02">W</br></div>
+				<div class="td03">74</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">186.21</div>
+				<div class="td02">Re</br></div>
+				<div class="td03">75</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">190.23</div>
+				<div class="td02">Os</br></div>
+				<div class="td03">76</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">192.22</div>
+				<div class="td02">Ir</br></div>
+				<div class="td03">77</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">195.08</div>
+				<div class="td02">Pt</br></div>
+				<div class="td03">78</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">196.97</div>
+				<div class="td02">Au</br></div>
+				<div class="td03">79</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">200.59</div>
+				<div class="td02">Hg</br></div>
+				<div class="td03">80</br></div>
+			</TD>
+			<TD class="acom">
+				<div class="td04">204.38</div>
+				<div class="td02">Ti</br></div>
+				<div class="td03">81</br></div>
+			</TD>
+			<TD class="acom">
+				<div class="td04">207.20</div>
+				<div class="td02">Pb</br></div>
+				<div class="td03">82</br></div>
+			</TD>
+			<TD class="acom">
+				<div class="td04">208.98</div>
+				<div class="td02">Bi</br></div>
+				<div class="td03">83</br></div>
+			</TD>
+			<TD class="multi">
+				<div class="td04">208.98</div>
+				<div class="td02">Po</br></div>
+				<div class="td03">84</br></div>
+			</TD>
+			<TD class="semi">
+				<div class="td04">209.98</div>
+				<div class="td02">At</br></div>
+				<div class="td03">85</br></div>
+			</TD>
+			<TD class="ina">
+				<div class="td04">222.02</div>
+				<div class="td02">Rn</br></div>
+				<div class="td03">86</br></div>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="td01">7</TD>
+			<TD class="alk">
+				<div class="td04">223.02</div>
+				<div class="td02">Fr</br></div>
+				<div class="td03">87</br></div>
+			</TD>
+			<TD class="alke">
+				<div class="td04">226.03</div>
+				<div class="td02">Ra</br></div>
+				<div class="td03">88</br></div>
+			</TD>
+			<TD class="act">
+				<div class="td04">&nbsp;</div>
+				<div class="td02">Ac</br></div>
+				<div class="td03">89-103</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">[261]</div>
+				<div class="td02">Rf</br></div>
+				<div class="td03">104</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td03">105</br></div>
+				<div class="td02">Db</br></div>
+				<div class="td04">[262]</div>
+			</TD>
+			<TD class="com">
+				<div class="td03">106</br></div>
+				<div class="td02">Sg</br></div>
+				<div class="td04">[266]</div>
+			</TD>
+			<TD class="com">
+				<div class="td04">[264]</div>
+				<div class="td02">Bh</br></div>
+				<div class="td03">107</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">[269]</div>
+				<div class="td02">Hs</br></div>
+				<div class="td03">108</br></div>
+			</TD>
+			<TD class="non">
+				<div class="td04">[278]</div>
+				<div class="td02">Mt</br></div>
+				<div class="td03">109</br></div>
+			</TD>
+			<TD class="non">
+				<div class="td04">[281]</div>
+				<div class="td02">Ds</br></div>
+				<div class="td03">110</br></div>
+			</TD>
+			<TD class="non">
+				<div class="td04">[280]</div>
+				<div class="td02">Rg</br></div>
+				<div class="td03">111</br></div>
+			</TD>
+			<TD class="com">
+				<div class="td04">[285]</div>
+				<div class="td02">Cn</br></div>
+				<div class="td03">112</br></div>
+			</TD>
+			<TD class="non">
+				<div class="td04">[286]</div>
+				<div class="td02">Nh</br></div>
+				<div class="td03">113</br></div>
+			</TD>
+			<TD class="non">
+				<div class="td04">[289]</div>
+				<div class="td02">Fl</br></div>
+				<div class="td03">114</br></div>
+			</TD>
+			<TD class="non">
+				<div class="td04">[289]</div>
+				<div class="td02">Mc</br></div>
+				<div class="td03">115</br></div>
+			</TD>
+			<TD class="acom">
+				<div class="td04">[293]</div>
+				<div class="td02">Lv</br></div>
+				<div class="td03">116</br></div>
+			</TD>
+			<TD class="non">
+				<div class="td04">[294]</div>
+				<div class="td02">Ts</br></div>
+				<div class="td03">117</br></div>
+			</TD>
+			<TD class="ina">
+				<div class="td04">[294]</div>
+				<div class="td02">Og</br></div>
+				<div class="td03">118</br></div>
+			</TD>
+		</TR>
+		<TR>
+			<TD colspan="19" id="hidden"></TD>
+		</TR>
+		<TR>
+			<TD colspan="3" id="hidden"></TD>
+			<TD class="lan">
+				<div class="td04">138.91</div>
+				<div class="td02">La</br></div>
+				<div class="td03">57</br></div>
+			</TD>
+			<TD class="lan">
+				<div class="td04">140.12</div>
+				<div class="td02">Ce</br></div>
+				<div class="td03">58</br></div>
+			</TD>
+			<TD class="lan">
+				<div class="td04">140.91</div>
+				<div class="td02">Pr</br></div>
+				<div class="td03">59</br></div>
+			</TD>
+			<TD class="lan">
+				<div class="td04">144.24</div>
+				<div class="td02">Nd</br></div>
+				<div class="td03">60</br></div>
+			</TD>
+			<TD class="lan">
+				<div class="td04">144.91</div>
+				<div class="td02">Pm</br></div>
+				<div class="td03">61</br></div>
+			</TD>
+			<TD class="lan">
+				<div class="td04">150.36</div>
+				<div class="td02">Sm</br></div>
+				<div class="td03">62</br></div>
+			</TD>
+			<TD class="lan">
+				<div class="td04">151.96</div>
+				<div class="td02">Eu</br></div>
+				<div class="td03">63</br></div>
+			</TD>
+			<TD class="lan">
+				<div class="td04">157.25</div>
+				<div class="td02">Gd</br></div>
+				<div class="td03">64</br></div>
+			</TD>
+			<TD class="lan">
+				<div class="td04">158.93</div>
+				<div class="td02">Tb</br></div>
+				<div class="td03">65</br></div>
+			</TD>
+			<TD class="lan">
+				<div class="td04">162.50</div>
+				<div class="td02">Dy</br></div>
+				<div class="td03">66</br></div>
+			</TD>
+			<TD class="lan">
+				<div class="td04">164.93</div>
+				<div class="td02">Ho</br></div>
+				<div class="td03">67</br></div>
+			</TD>
+			<TD class="lan">
+				<div class="td04">167.26</div>
+				<div class="td02">Er</br></div>
+				<div class="td03">68</br></div>
+			</TD>
+			<TD class="lan">
+				<div class="td04">168.93</div>
+				<div class="td02">Tm</br></div>
+				<div class="td03">69</br></div>
+			</TD>
+			<TD class="lan">
+				<div class="td04">173.06</div>
+				<div class="td02">Yb</br></div>
+				<div class="td03">70</br></div>
+			</TD>
+			<TD class="lan">
+				<div class="td04">174.97</div>
+				<div class="td02">Lu</br></div>
+				<div class="td03">71</br></div>
+			</TD>
+		</TR>
+		<TR>
+			<TD colspan="3" id="hidden"></TD>
+			<TD class="act">
+				<div class="td04">227.03</div>
+				<div class="td02">Ac</br></div>
+				<div class="td03">89</br></div>
+			</TD>
+			<TD class="act">
+				<div class="td04">232.04</div>
+				<div class="td02">Th</br></div>
+				<div class="td03">90</br></div>
+			</TD>
+			<TD class="act">
+				<div class="td04">231.04</div>
+				<div class="td02">Pa</br></div>
+				<div class="td03">91</br></div>
+			</TD>
+			<TD class="act">
+				<div class="td04">238.03</div>
+				<div class="td02">U</br></div>
+				<div class="td03">92</br></div>
+			</TD>
+			<TD class="act">
+				<div class="td04">237.05</div>
+				<div class="td02">Np</br></div>
+				<div class="td03">93</br></div>
+			</TD>
+			<TD class="act">
+				<div class="td04">244.06</div>
+				<div class="td02">Pu</br></div>
+				<div class="td03">94</br></div>
+			</TD>
+			<TD class="act">
+				<div class="td04">243.06</div>
+				<div class="td02">Am</br></div>
+				<div class="td03">95</br></div>
+			</TD>
+			<TD class="act">
+				<div class="td04">247.07</div>
+				<div class="td02">Cm</br></div>
+				<div class="td03">96</br></div>
+			</TD>
+			<TD class="act">
+				<div class="td04">247.07</div>
+				<div class="td02">Bk</br></div>
+				<div class="td03">97</br></div>
+			</TD>
+			<TD class="act">
+				<div class="td04">251.08</div>
+				<div class="td02">Cf</br></div>
+				<div class="td03">98</br></div>
+			</TD>
+			<TD class="act">
+				<div class="td04">[254]</div>
+				<div class="td02">Es</br></div>
+				<div class="td03">99</br></div>
+			</TD>
+			<TD class="act">
+				<div class="td04">257.10</div>
+				<div class="td02">Fm</br></div>
+				<div class="td03">100</br></div>
+			</TD>
+			<TD class="act">
+				<div class="td04">258.10</div>
+				<div class="td02">Md</br></div>
+				<div class="td03">101</br></div>
+			</TD>
+			<TD class="act">
+				<div class="td04">259.10</div>
+				<div class="td02">No</br></div>
+				<div class="td03">102</br></div>
+			</TD>
+			<TD class="act">
+				<div class="td04">[262]</div>
+				<div class="td02">Lr</br></div>
+				<div class="td03">103</br></div>
+			</TD>
+		</TR>
+		<TR>
+			<TD colspan="19" id="hidden"></TD>
+		</TR>
+		<TR>
+			<TD colspan="19" id="hidden"></TD>
+		</TR>
+		<TR>
+			<TD colspan="5" id="hidden"></TD>
+			<TD class="alk"><div class="td02">Alkali Metal</div></TD>
+			<TD class="alke"><div class="td02">Earth</div></TD>
+			<TD class="com"><div class="td02">Transition Metal</div></TD>
+			<TD class="acom"><div class="td02">Basic Metal</div></TD>
+			<TD class="semi"><div class="td02">Metalloid</div></TD>
+			<TD class="multi"><div class="td02">Nonmetal</div></TD>
+			<TD class="two"><div class="td02">Halogen</div></TD>
+			<TD class="ina"><div class="td02">Noble Gas</div></TD>
+			<TD class="lan"><div class="td02">Lanthi- anide</div></TD>
+			<TD class="act"><div class="td02">Actimide</div></TD>
+			<TD class="non"><div class="td02">Not classified</div></TD>
+		</TR>
+	</TABLE>
+</BODY>
+</HTML>

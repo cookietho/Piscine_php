@@ -1,0 +1,214 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    doft.css                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: minakim <marvin@42.fr>                     +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/26 14:21:56 by minakim           #+#    #+#              #
+#    Updated: 2019/03/26 14:22:02 by minakim          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+p {
+  font-size: 0.8vw;
+  margin:0;
+  font-family: Verdana;
+}
+
+.top_block {
+	width: 74%;
+	height: auto;
+	margin: auto;
+	margin-top: 1%;
+	padding: 1%;
+	position: relative;
+	z-index: 1;
+}
+
+.left_block {
+	width: 8%;
+	height: auto;
+	float: left;
+	padding: 1%;
+	padding-bottom: 2%;
+}
+
+.right_block {
+	width: 8%;
+	height: auto;
+	float: right;
+	padding: 1%;
+	padding-bottom: 13%;
+}
+
+.middle {
+	display: inline-block;
+	width: 70%;
+	height: 50%;
+	margin-left: 15%;
+	margin-top: 2%;
+}
+
+.block {
+	background-color: #909090;
+	box-shadow: 10px 10px 5px black;
+	border-radius: 10px;
+}
+
+.mid_block {
+	width: 72%;
+	height: auto;
+	padding: 1%;
+	float: left;
+	margin-left: 3%;
+	z-index: 1;
+}
+
+.top_right {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	float: right;
+	width: 3%;
+}
+
+#day42 {
+	display: inline-block;
+	width: 35%;
+}
+
+#reload {
+	width: 60%;
+	display: block;
+	margin-left: 35%
+}
+
+#loupe {
+	width: 22%;
+	z-index: 2;
+	margin-left:39%;
+	position: absolute;
+}
+
+#close {
+	width: 60%;
+	display: block;
+	margin-top: 210%;
+	margin-left: 35%;
+}
+
+#arrow {
+	margin:auto;
+	margin-top:10%;
+	display:block;
+	width:60%;
+}
+
+#main {
+	margin:auto;
+	margin-top:10%;
+	display:block;
+	width:60%;
+}
+
+#outil {
+	margin:auto;
+	margin-top:10%;
+	display:block;
+	width:60%;
+}
+
+#chat {
+	margin:auto;
+	margin-top:10%;
+	display:block;
+	width:60%;
+}
+
+#oeil {
+	margin:auto;
+	margin-top:10%;
+	display:block;
+	width:60%;
+	border: 3px solid red;
+	border-radius: 5px;
+}
+
+#book {
+	margin:auto;
+	margin-top:10%;
+	display:block;
+	width:60%;
+}
+
+#towel {
+	margin:auto;
+	margin-top:10%;
+	display:block;
+	width:50%;
+}
+
+.brick {
+	display: block;
+	width: 30%;
+	visibility: hidden;
+}
+
+#brick_id {
+	display: block;
+	background : url("resources/brick.jpg");
+	background-repeat: repeat;
+	background-size: 27%;
+}
+
+#cluster {
+	width: 100%;
+	display: block;
+	margin: auto;
+	z-index: 2;
+	height: auto;
+}
+
+#ikea {
+	width:10%;
+	float: right;
+	position: relative;
+	height: 43px;
+	margin-top: -22%;
+	margin-right: 57%;
+}
+
+#apple {
+	width:20%;
+	float: right;
+	position: relative;
+	height: 43px;
+	margin-top: -22%;
+	margin-right: 0%;
+}
+
+.green_block {
+	display: inline-block;
+	background-color: #98FB98;
+	width: 36%;
+	height: auto;
+	z-index: 4;
+	margin-top: -6%;
+	margin-left: -6%;
+	box-shadow: 10px 10px 5px black;
+	border-radius: 10px;
+	padding: 1%;
+	padding-bottom: 5%;
+}
+
+#ordinateurs {
+	text-shadow: 6px 6px 5px red;
+}
+
+#type {
+	width: 75%;
+	display: inline-block;
+	margin-top: 1%;
+	font-size: 0.8vw;
+}
